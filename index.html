@@ -106,8 +106,8 @@
       <form id='register-form' action="" method='post'>
         <input type="text" placeholder="Username" required>
         <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <input type="password" placeholder="Re Password" required>
+        <input type="password" placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required >
+        <input type="password" placeholder="Re Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required >
         <button type='submit'>Register</button>
         <label for='form-switch'>Already Member ? Sign In Now..</label>
       </form>
